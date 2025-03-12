@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="author" content="Your name">
+  <meta name="keywords" content="Carnegie Mellon University, Information Systems">
+  <meta name="description" content="Your name professional website">
+  <title>William Liu - Contact</title>
+</head>
+<body>
+  <header>
+        <h1 id="webname">William Liu </h1>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Dashboard</a></li>
+            <li><a href="cv.html" >Profile</a></li>
+            <li><a href="contact.html" >Get in Touch</a></li>
+            <li><a href="fun.html" >Extras</a></li>
+          </ul>
+        </nav>
+    </header>
+  <div class="main">
+    <h2>Contact Me</h2>
+    <! Contact form with required fields >
+    <form action="submit_contact.php" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" required></textarea><br><br>
+      
+      <input type="submit" value="Submit">
+    </form>
+    
+    <!Contact information table >
+    
+    <table border="1">
+      <tr>
+        <th>Type</th>
+        <th>Information</th>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>wliu4@andrew.cmu.edu</td>
+      </tr>
+      <tr>
+        <td>Phone</td>
+        <td>+1 412 616 6102</td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td>Pittsburgh, Pennsylvannia</td>
+      </tr>
+    </table>
+  </div>
+  <footer>
+    <p>&copy; 2025 William Liu.</p>
+  </footer>
+</body>
+</html>
