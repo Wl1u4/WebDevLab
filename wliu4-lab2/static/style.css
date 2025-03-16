@@ -1,0 +1,48 @@
+#webname {
+    color: black;
+    background-color: rgb(224, 199, 151);
+}
+
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    padding: 5px;
+    margin: 5px;
+    
+}
+
+.nav-link {
+    text-decoration: none;   /* Remove underline */
+    color: rgb(96, 63, 2);          /* Change font color to your chosen hex color */
+    margin-right: 15px;       /* Add spacing to the right */
+}
+
+th {
+    padding: 12px 0;            /* 12px padding on top and bottom */
+    background-color: #333333;   /* Set a background color  */
+    color: #ffffff;              /* Set the text color  */
+    width: fit-content;         /* Width adjusted to content */
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;   /* Light gray for even rows */
+}
+
+form * {
+    display: block;      /* Change elements to block layout */
+    margin: auto;        /* Center elements horizontally */
+    text-align: center;  /* Center text within each element */
+}
+
+form input[type="submit"] {
+    background-color: #92ad70; 
+    border: none;              
+    border-radius: 10px;       /* Rounded corners */
+    padding: 10px 20px;        /*  Add some padding for a better look */
+    cursor: pointer;           /*  Change cursor on hover */
+    color: #ffffff;            /* Optional: Set text color */
+}
