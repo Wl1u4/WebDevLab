@@ -3,19 +3,18 @@
 <head>
   <link rel="stylesheet" href="../static/style.css">
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <meta charset="UTF-8">
-  <meta name="author" content="Your name">
+  <meta name="author" content="William Liu">
   <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-  <meta name="description" content="Your name professional website">
-  <title>William Liu - For fun</title>
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+  <meta name="description" content="William Liu professional website">
+  <title>William Liu - CV</title>
   <script src="../static/script.js" defer></script>
 </head>
-<body onload="addYear()">
+<body >
   <header >
         <h1 id="webname">William Liu </h1>
         <nav>
@@ -28,18 +27,31 @@
         </nav>
     </header>
   <div class="main">
-    <h2>Things I love to do for fun</h2>
-
-    <button id="showListBtn" onclick="showList()">Click to see...</button>
-
-    <ul id="funList" >
-      <li>Playing Music</li>
-      <li>Traveling</li>
-      <li>Photography</li>
-    </ul>
+    <h2>Curriculum Vitae</h2>
+    <!-- CV information table -->
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td>Example Item</td>
+        <td>Example description for a CV item.</td>
+      </tr>
+      <tr>
+        <td>Project 1</td>
+        <td>Description of Project 1.</td>
+      </tr>
+      <tr>
+        <td>Project 2</td>
+        <td>Description of Project 2.</td>
+      </tr>
+    </table>
+    <! Link to resume >
+    <p><a href="../static/Resume.pdf" target="_blank">Download Resume (PDF)</a></p>
   </div>
-  <footer> 
-    <p id="copyYear">&copy; William Liu. All rights reserved.</p>
+  <footer>
+    <p>&copy; 2025 William Liu.</p>
   </footer>
 </body>
 </html>

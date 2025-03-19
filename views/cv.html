@@ -12,9 +12,10 @@
   <meta name="keywords" content="Carnegie Mellon University, Information Systems">
   <meta name="description" content="William Liu professional website">
   <title>William Liu - CV</title>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
   <script src="../static/script.js" defer></script>
 </head>
-<body >
+<body onload="addYear()">
   <header >
         <h1 id="webname">William Liu </h1>
         <nav>
@@ -50,8 +51,8 @@
     <! Link to resume >
     <p><a href="../static/Resume.pdf" target="_blank">Download Resume (PDF)</a></p>
   </div>
-  <footer>
-    <p>&copy; 2025 William Liu.</p>
-  </footer>
+  <footer> 
+    <p id="copyYear">&copy; William Liu. All rights reserved.</p>
+</footer>
 </body>
 </html>
