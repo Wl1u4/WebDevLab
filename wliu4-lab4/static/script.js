@@ -63,9 +63,9 @@ const currentHour = d.getHours();
 
 function greetingFunc(){
     if (currentHour < 12){
-        return "Good Morning";
+        return "Good Morning!";
     } else if (currentHour >= 12 && currentHour < 18){
-        return "Good Afternoon";
+        return "Good Afternoon!";
     } else if (currentHour >= 18 && currentHour < 20){
         return "Good Evening";
     } else {
@@ -77,7 +77,7 @@ student = {name:"William", age:19};
 
 const timeElem = document.getElementById("time");
 if (timeElem) {
-  timeElem.innerHTML = greetingFunc() + ", " + "my name is," + student.name + "!";
+  timeElem.innerHTML = greetingFunc() + ", " + student.name + "!";
 }
 
 
@@ -120,6 +120,7 @@ function myValidation() {
 
     if (!nameInput.checkValidity()) {
         message = "Please fill out your name";
+        console.log(message)
     } else if (!emailInput.checkValidity()) {
         message = "Please fill out your Email";
     } else if (!commentInput.checkValidity()) {
@@ -136,17 +137,3 @@ function myValidation() {
 }
 
 
-// In static/script.js
-function getAdvice() {
-    fetch('https://api.adviceslip.com/advice')
-      .then(response => response.json())
-      .then(data => {
-        const advice = data.slip.advice;
-        document.getElementById("adviceText").innerText = advice;
-      })
-      .catch(error => {
-        document.getElementById("adviceText").innerText = "Error fetching advice.";
-        console.error("Error:", error);
-      });
-  }
-  
