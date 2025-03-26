@@ -78,7 +78,7 @@ form input[type="submit"] {
 }
 
 
-/* advice container */
+/* Style for the advice container */
 .container {
     display: inline-block;
     padding: 20px;
@@ -125,108 +125,3 @@ form input[type="submit"] {
     padding: 3rem;
 
   }
-
-
-/* LAB 6 */
-  .grid-container{
-    display: grid;
-    grid-template-areas:
-    'header header'
-    'nav nav'
-    'main_img main'
-    'bottom_content bottom_content'
-    'footer footer'
-    ;
-
-  }
-
-
-  
-  header{
-  grid-area: header;
-  background-color: lightgray;
-
-  }
-
-  nav{
-    grid-area: nav;
-    background-color: gainsboro;
-  }
-
-  figure{
-
-    grid-area: main_img;
-    background-color: lightgreen;
-    height: 30vh;
-  }
-
-  main{
-    grid-area: main;
-    background-color: lightblue;
-  }
-
-  summary{
-    grid-area: bottom_content;
-    background-color: lightcoral;
-  }
-
-  footer{
-    grid-area: footer;
-    background-color: lightgrey;
-  }
-
-
-  @keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-  }
-  
-  #webname {
-    animation: pulse 2s 3;
-  }
-  
-
-  /* resize the moblie */
-  @media only screen and (max-width:650px) {
-    .grid-container{
-      display: grid;
-      grid-template-areas:
-      'header'
-      'nav'
-      'main_img'
-      'main'
-      'bottom_content'
-      'footer';
-  
-    }
-  }
-
-    /* hide navigation links  mobile */
-    nav ul {
-      display: none;
-      flex-direction: column;
-    }
-    
-    /* show hamburger icon  mobile */
-    #hamburger {
-      display: block;
-    }
-    
-    /* when toggled, show the menu */
-    nav ul.show-menu {
-      display: flex;
-    }
-  
-
-
-    nav a.active {
-      color: orange;       
-      font-weight: bold; 
-    }
-    
-   
-    nav a:hover {
-      color: yellow;
-    }
-    

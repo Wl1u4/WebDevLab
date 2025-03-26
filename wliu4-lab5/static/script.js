@@ -136,7 +136,7 @@ function myValidation() {
 }
 
 
-
+// In static/script.js
 function getAdvice() {
     fetch('https://api.adviceslip.com/advice')
       .then(response => response.json())
@@ -149,32 +149,4 @@ function getAdvice() {
         console.error("Error:", error);
       });
   }
-  
-
-
-
-
-
-document.addEventListener("DOMContentLoaded", function() {
-    const currentPath = window.location.pathname; 
-    const navLinks = document.querySelectorAll('nav a');
-  
-    navLinks.forEach(link => {
-      // Create a URL object to reliably parse the link's href
-      const linkPath = new URL(link.href, window.location.origin).pathname;
-      if (linkPath === currentPath) {
-        link.classList.add('active');
-      }
-    });
-  });
-  
-  
-document.addEventListener("DOMContentLoaded", function() {
-    const hamburger = document.getElementById("hamburger");
-    const navUl = document.querySelector("nav ul");
-  
-    hamburger.addEventListener("click", function() {
-      navUl.classList.toggle("show-menu");
-    });
-  });
   
